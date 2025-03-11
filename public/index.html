@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyreinternat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Dyreinternat</h1>
+
+    <!-- Formular til oprettelse af dyr -->
+    <div class="form-container">
+        <h2>Opret et dyr</h2>
+        <form id="createAnimalForm">
+            <input type="text" id="name" placeholder="Navn" required>
+            <input type="text" id="species" placeholder="Art" required>
+            <input type="number" id="age" placeholder="Alder" required>
+            <textarea id="description" placeholder="Beskrivelse" required></textarea>
+            <input type="file" id="image" accept="image/*">
+            <button type="submit">Opret Dyr</button>
+        </form>
+    </div>
+
+    <div id="animalsContainer"></div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
